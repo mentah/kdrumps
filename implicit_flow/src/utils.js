@@ -18,7 +18,7 @@ export const randomString = () => {
 // Parse hash string
 // ref: https://developers.google.com/identity/protocols/oauth2/javascript-implicit-flow?hl=en#oauth-2.0-endpoints_2
 export const parseURLHash = () => {
-    const fragmentString = location.hash.substring(1);
+    const fragmentString = window.location.hash.substring(1);
     const params = {};
     const regex = /([^&=]+)=([^&]*)/g
     let m = regex.exec(fragmentString);
