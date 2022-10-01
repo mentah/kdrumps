@@ -37,7 +37,7 @@ function App() {
       redirect_uri: document.location.origin + "/callback",
       scope: "https://www.googleapis.com/auth/drive",
       state,
-      response_type: "token",
+      response_type: "code",
       include_granted_scopes: "true",
     };
 
